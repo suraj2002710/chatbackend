@@ -10,7 +10,7 @@ exports.authenticate=async(req,res,next)=>{
                 })
             }
             else{
-                await jwt.verify(token,process.env.tokensceretkey,async(err,decode)=>{
+                await jwt.verify(token,"surajsruajsruajsurajsurajsraujsdhfkshgafhdfsjsdhfdskfghdsgfjhjk",async(err,decode)=>{
                     if(err){
                         res.send({
                             status:false,
