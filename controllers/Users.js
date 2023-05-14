@@ -33,7 +33,7 @@ exports.usersinup = async (req, res) => {
                 })
                 data.save()
                 
-            const token = await jwt.sign({ id: data._id }, process.env.tokensceretkey, { expiresIn: "1d" })
+            const token = await jwt.sign({ id: data._id }, "surajsruajsruajsurajsurajsraujsdhfkshgafhdfsjsdhfdskfghdsgfjhjk", { expiresIn: "1d" })
             res.status(200).send({
                 status: true,
                 msg: "sinup successfully",
@@ -65,7 +65,7 @@ exports.usersinup = async (req, res) => {
                     // 
                 })
                 
-            const token = await jwt.sign({ id: data._id }, process.env.tokensceretkey, { expiresIn: "1d" })
+            const token = await jwt.sign({ id: data._id }, "surajsruajsruajsurajsurajsraujsdhfkshgafhdfsjsdhfdskfghdsgfjhjk", { expiresIn: "1d" })
             res.status(200).send({
                 status: true,
                 msg: "sinup successfully",
@@ -90,7 +90,7 @@ exports.login = async (req, res) => {
             const compasswrd = await bcrypt.compare(password, data.password)
             
             if (compasswrd) {
-                const token = await jwt.sign({ id: data._id }, process.env.tokensceretkey, { expiresIn: "1d" })
+                const token = await jwt.sign({ id: data._id }, "surajsruajsruajsurajsurajsraujsdhfkshgafhdfsjsdhfdskfghdsgfjhjk", { expiresIn: "1d" })
                 res.status(200).send({
                     status: true,
                     msg: "you are login",
