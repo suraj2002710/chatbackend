@@ -12,7 +12,7 @@ const server_key="AAAAR6dVltk:APA91bG_lgE-_ea5UYvmH407_FDr8nOxugSq-WvVYWSOXmkAVD
 require("dotenv").config()
 var fcm = new FCM(server_key);
 
-mongoose.connect("mongodb://127.0.0.1:27017/chat").then((res)=>{
+mongoose.connect("mongodb+srv://surajaheer2002:suraj12345@cluster0.hcq5sxu.mongodb.net/chat?retryWrites=true&w=majority").then((res)=>{
     console.log("mongo connect");
 }).catch((err)=>{
     console.log(err);
