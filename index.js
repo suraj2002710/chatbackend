@@ -34,7 +34,7 @@ app.use(cors({
     "http://192.168.0.24:3000",
     'http://192.168.0.9:3000',
     'http://192.168.0.14:3000',
-            "https://crick-chat-app.netlify.app/"
+            "https://crick-chat-app.netlify.app"
 ],
     credentials:true
 }))
@@ -47,7 +47,7 @@ const io=require('socket.io')(server,{
     "http://localhost:3001",
     "http://localhost:3002",
     "http://192.168.0.9:3000",
-                     "https://crick-chat-app.netlify.app/"
+                     "https://crick-chat-app.netlify.app"
     
 ],
     credentials:true
