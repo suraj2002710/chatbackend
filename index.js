@@ -34,7 +34,8 @@ app.use(cors({
     "http://192.168.0.24:3000",
     'http://192.168.0.9:3000',
     'http://192.168.0.14:3000',
-            "https://crick-chat-app.netlify.app"
+            "https://crick-chat-app.netlify.app",
+            "https://thunderous-tiramisu-60b5f2.netlify.app"
 ],
     credentials:true
 }))
